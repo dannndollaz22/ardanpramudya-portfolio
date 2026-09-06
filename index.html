@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardan Pramudya // Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Inter:wght@300;400;600;800&family=Orbitron:wght@700;900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Interactive Code Vortex Canvas -->
+    <canvas id="cyber-canvas"></canvas>
+
+    <!-- Boot Sequence Loader Animation -->
+    <div id="loader" class="loader">
+        <div class="terminal-loader boot-terminal">
+            <div class="terminal-header">
+                <div class="terminal-title">admin@portfolio-sys:~</div>
+                <div class="terminal-controls">
+                    <div class="control close"></div>
+                    <div class="control minimize"></div>
+                    <div class="control maximize"></div>
+                </div>
+            </div>
+            <div class="text boot-console" id="boot-console">
+                <div id="console-output"></div>
+                <div><span class="prompt">admin@local:~$</span> <span class="cursor">_</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="brand-logo" aria-label="Home">
+            <div class="cyber-logo-new">
+                <span class="ap-text">A</span><span class="ap-text-accent">P</span>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">_home</a></li>
+            <li><a href="#about">_about</a></li>
+            <li><a href="#resume">_resume</a></li>
+            <li><a href="#projects">_projects</a></li>
+            <li><a href="#contact">_contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-content hidden-init">
+                <p class="greeting">System.out.println("Welcome"); profile ==</p>
+                <h1 class="glitch" data-text="Ardan Pramudya.">Ardan Pramudya</h1>
+                <h2 class="subtitle">Fullstack Developer</h2>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-title">bash - terminal</div>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">admin@local:~$</span> <span id="typewriter"></span><span
+                                class="cursor">_</span></p>
+                    </div>
+                </div>
+                <a href="#resume" class="btn primary-btn">View Log()</a>
+            </div>
+
+            <div class="hero-image-container hidden-init">
+                <div class="hero-image-glow"></div>
+                <img src="profile.png" alt="Ardan Pramudya" class="hero-image active" id="profile-img-1">
+                <img src="ardan2.png" alt="Ardan Pramudya" class="hero-image" id="profile-img-2">
+                <img src="ardan3.png" alt="Ardan Pramudya" class="hero-image" id="profile-img-3">
+            </div>
+        </div>
+        <div class="background-animation">
+            <!-- CSS particles -->
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about hidden">
+        <h2 class="section-title">Professional Overview</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a dedicated IT Professional and Project Manager with a strong foundation in Information
+                    Technology from Brawijaya University. I specialize in aligning technical solutions with business
+                    objectives through comprehensive project management, system analysis, and strategic execution.</p>
+                <p>Driven by analytical problem-solving and a collaborative mindset, I have a proven track record of
+                    optimizing workflows, leading teams, and executing digital strategies that deliver measurable
+                    results.</p>
+                <p>Core Competencies & Technical Expertise:</p>
+                <ul class="tech-list">
+                    <li>Strategic Project Management</li>
+                    <li>System Requirements & Workflow Analysis</li>
+                    <li>UI/UX Design & Prototyping</li>
+                    <li>Operations & Supply Chain Logistics</li>
+                    <li>Human Resources & Talent Development</li>
+                    <li>Digital Marketing & CRM Strategy</li>
+                    <li>Cross-functional Team Leadership</li>
+                    <li>Stakeholder Communication</li>
+                </ul>
+            </div>
+            <div class="about-image-wrapper">
+                <div class="code-snippet-box">
+                    <div class="terminal-header">
+                        <div class="terminal-title">ardan_profile.json</div>
+                    </div>
+                    <pre><code>{
+  "name": "Ardan Pramudya",
+  "education": "Brawijaya University (IT)",
+  "gpa": "3.53",
+  "location": "Probolinggo, East Java, ID",
+  "status": "Ready to Deploy",
+  "focus": ["Mobile Developer", "Marketing", "Human Resources"]
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="resume" class="resume hidden">
+        <h2 class="section-title">Professional Experience & Academic Record</h2>
+
+        <div class="resume-container">
+            <!-- Experience Column -->
+            <div class="resume-col">
+                <h3 class="col-title"><span class="folder-icon"><i class="fa-solid fa-briefcase"
+                            style="color: var(--accent-blue)"></i></span> Professional Roles</h3>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">August 2026 - Present</div>
+                    <div class="resume-title">Marketing Executive (HMC)</div>
+                    <div class="resume-company">Honda Motorcycle, PT Nusantara Sakti Group</div>
+                    <div class="resume-desc">Spearheaded high-impact marketing initiatives and B2C sales operations.
+                        Driven customer acquisition and brand growth through targeted digital campaigns, active market
+                        prospecting, and strategic relationship management.</div>
+                </div>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">August 2025 - January 2026</div>
+                    <div class="resume-title">Project Manager</div>
+                    <div class="resume-company">PT CMLABS Indonesia Digital (Internship)</div>
+                    <div class="resume-desc">Directed end-to-end agile project lifecycles for digital products.
+                        Coordinated cross-functional engineering teams, oversaw system workflows, and ensured timely
+                        delivery of scalable technical solutions aligned with strategic business goals.</div>
+                </div>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">September 2025 - November 2025</div>
+                    <div class="resume-title">Vice Project Leader</div>
+                    <div class="resume-company">Spartan Vokasi UB</div>
+                    <div class="resume-desc">Co-directed campus-wide operational initiatives and managed
+                        cross-functional student teams. Provided strategic leadership to optimize organizational
+                        resources, foster solidarity, and drive high-engagement campus events.</div>
+                </div>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">March 2023 - November 2025</div>
+                    <div class="resume-title">UI/UX Designer</div>
+                    <div class="resume-company">Google Developer Groups (GDG) Brawijaya</div>
+                    <div class="resume-desc">Spearheaded user experience initiatives and interface design for
+                        community-driven tech projects. Leveraged user behavior research to wireframe, design, and
+                        prototype highly functional, user-centric digital solutions.</div>
+                </div>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">June 2025 - August 2025</div>
+                    <div class="resume-title">Steering Committee - Logistics & Equipment</div>
+                    <div class="resume-company">RAJA Brawijaya</div>
+                    <div class="resume-desc">Directed logistical strategies and oversaw equipment procurement for a
+                        massive-scale university orientation event. Guided operational committees to ensure seamless
+                        asset distribution, resource optimization, and infrastructural readiness.</div>
+                </div>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">July 2025</div>
+                    <div class="resume-title">Strategic Liaison Officer</div>
+                    <div class="resume-company">Olivia X Olimpiade Vokasi Indonesia</div>
+                    <div class="resume-desc">Served as the primary communication bridge for a high-profile national
+                        vocational Olympiad. Orchestrated complex logistics, managed stakeholder relations, and ensured
+                        seamless participant mobilization.</div>
+                </div>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">February 2025 - December 2025</div>
+                    <div class="resume-title">Head of Human Resources Development</div>
+                    <div class="resume-company">UAM Penalaran</div>
+                    <div class="resume-desc">Engineered and implemented strategic talent development programs, conducted
+                        performance evaluations, and led capacity-building initiatives to maximize organizational
+                        efficiency.</div>
+                </div>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">August 2024 - August 2025</div>
+                    <div class="resume-title">Coordinating Ministry Secretary of Movement</div>
+                    <div class="resume-company">Student Executive Board, Brawijaya University</div>
+                    <div class="resume-desc">Acted as Chief Administrator, overseeing high-level organizational
+                        operations. Coordinated inter-departmental strategic movements, managed executive
+                        communications, and ensured the effective execution of large-scale advocacy programs.</div>
+                </div>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">June 2024 - August 2024</div>
+                    <div class="resume-title">Logistics & Operations Supervisor</div>
+                    <div class="resume-company">RAJA Brawijaya</div>
+                    <div class="resume-desc">Directed end-to-end logistical operations and supply chain management for
+                        massive-scale university events. Ensured structural readiness and operational efficiency for
+                        events accommodating over 15,000 attendees.</div>
+                </div>
+            </div>
+
+            <!-- Education Column -->
+            <div class="resume-col">
+                <h3 class="col-title"><span class="folder-icon"><i class="fa-solid fa-graduation-cap"
+                            style="color: var(--accent-emerald)"></i></span> Academic Records</h3>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">2023 - 2026</div>
+                    <div class="resume-title">Diploma III in Information Technology</div>
+                    <div class="resume-company">Brawijaya University</div>
+                    <div class="resume-desc">Faculty of Vocational Studies<br>GPA: 3.53/4.00</div>
+                </div>
+
+                <div class="resume-box project-card">
+                    <div class="resume-date">2019 - 2023</div>
+                    <div class="resume-title">Computer and Network Engineering</div>
+                    <div class="resume-company">State Vocational High School 2 Probolinggo</div>
+                    <div class="resume-desc">Final Score: 86.82/100</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects hidden">
+        <h2 class="section-title">Deployed Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card-ui code-snippet-box">
+                <div class="terminal-header">
+                    <div class="terminal-title">project_01.exe - Honda Payment Simulator</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="accent-cyan">Honda Payment Simulator</h3>
+                    <p>A sophisticated financial portal for accurate credit and cash simulations. Features real-time
+                        automated calculations, monthly installment breakdowns, and professional currency formatting.
+                    </p>
+                    <div class="tech-stack">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-ui code-snippet-box">
+                <div class="terminal-header">
+                    <div class="terminal-title">project_03.exe - IT Dashboard</div>
+                </div>
+                <div class="project-content">
+                    <h3 class="accent-cyan">IT Programmer Dashboard</h3>
+                    <p>An immersive, hacker-themed terminal dashboard featuring a minimalist brand identity, dynamic
+                        glitch animations, and interactive boot sequence entries.</p>
+                    <div class="tech-stack">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Canvas API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact hidden">
+        <h2 class="section-title">Establish Connection</h2>
+        <div class="contact-form-container">
+            <p>System ready for new challenges. I am currently open to strategic collaborations, full-time
+                opportunities, and professional networking.</p>
+            <form class="terminal-form" action="https://formsubmit.co/ardanpramudya91@gmail.com" method="POST">
+                <!-- Disable Formsubmit ReCaptcha to keep the cyber theme clean -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Optional: you can redirect back to your site after submission -->
+                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:8080/"> -->
+
+                <div class="input-group">
+                    <label for="name">~$ set user_name=</label>
+                    <input type="text" id="name" name="name" placeholder="Type your name..." required>
+                </div>
+                <div class="input-group">
+                    <label for="email">~$ set user_ip_email=</label>
+                    <input type="email" id="email" name="email" placeholder="Type your email..." required>
+                </div>
+                <div class="input-group">
+                    <label for="message">~$ echo payload=</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter message payload here..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">./transmit_data.sh</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ardanpramudya91@gmail.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ardanpramudya" target="_blank" title="LinkedIn"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/dannndollaz22" target="_blank" title="GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/ardanpramudyaa?stkn=NHgzM3hhdGExZjI5&utm_source=qr" target="_blank" title="Instagram"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@princescaletta?_r=1&_t=ZS-99UkQYzdYyi" target="_blank" title="TikTok"><i
+                    class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2026 <span class="accent-cyan">Ardan Pramudya</span>. All Rights Reserved.</p>
+        <p class="small-text" id="visitor-counter"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
