@@ -394,4 +394,47 @@ document.addEventListener('DOMContentLoaded', () => {
             heroImages[currentHeroImgIndex].classList.add('active');
         }, 4000); // Crossfade every 4 seconds
     }
+
+    // ==========================================
+    // 11. Secure CV Modal
+    // ==========================================
+    const cvModal = document.getElementById('cv-modal');
+    const viewCvBtn = document.getElementById('view-cv-btn');
+    const closeCvBtn = document.querySelector('.cv-close-modal');
+
+    if (viewCvBtn && cvModal && closeCvBtn) {
+        // Open modal
+        viewCvBtn.addEventListener('click', () => {
+            cvModal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scroll
+        });
+
+        // Close modal (X button)
+        closeCvBtn.addEventListener('click', () => {
+            cvModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal (click outside)
+        window.addEventListener('click', (e) => {
+            if (e.target === cvModal) {
+                cvModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Prevent keyboard shortcuts for printing/saving when modal is open
+        document.addEventListener('keydown', (e) => {
+            if (cvModal.style.display === 'block') {
+                if (e.key === 'Escape') {
+                    cvModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+                // Block Ctrl+P (Print) and Ctrl+S (Save)
+                if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 's')) {
+                    e.preventDefault();
+                }
+            }
+        });
+    }
 });

@@ -129,6 +129,9 @@
     <!-- Experience & Education Section -->
     <section id="resume" class="resume hidden">
         <h2 class="section-title">Professional Experience & Academic Record</h2>
+        <div style="margin-bottom: 40px;">
+            <button id="view-cv-btn" class="btn"><i class="fa-solid fa-lock" style="margin-right: 8px;"></i> View Secure CV</button>
+        </div>
 
         <div class="resume-container">
             <!-- Experience Column -->
@@ -249,7 +252,11 @@
                     <div class="terminal-title">project_01.exe - Honda Payment Simulator</div>
                 </div>
                 <div class="project-content">
-                    <h3 class="accent-cyan">Honda Payment Simulator</h3>
+                    <h3 class="accent-cyan">
+                        <a href="https://simulpaynss.vercel.app/" target="_blank" style="text-decoration: none; color: var(--accent-cyan); display: flex; align-items: center; gap: 8px;">
+                            Honda Payment Simulator <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 14px;"></i>
+                        </a>
+                    </h3>
                     <p>A sophisticated financial portal for accurate credit and cash simulations. Features real-time
                         automated calculations, monthly installment breakdowns, and professional currency formatting.
                     </p>
@@ -273,8 +280,9 @@
                     </h3>
                     <p>An interactive digital platform designed for exploring and purchasing new Honda motorcycles online.</p>
                     <div class="tech-stack">
-                        <span>Web Development</span>
-                        <span>UI/UX</span>
+                        <span>HTML/CSS</span>
+                        <span>Vanilla JS</span>
+                        <span>Python</span>
                     </div>
                 </div>
             </div>
@@ -310,6 +318,17 @@
             </form>
         </div>
     </section>
+
+    <!-- CV Modal -->
+    <div id="cv-modal" class="cv-modal-container">
+        <div class="cv-modal-content">
+            <span class="cv-close-modal">&times;</span>
+            <div class="cv-image-wrapper">
+                <img src="CV_Ardan%20Pramudya.png" alt="CV Ardan Pramudya" id="cv-image" oncontextmenu="return false;" draggable="false">
+                <div class="cv-protection-overlay" oncontextmenu="return false;"></div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="social-links">
