@@ -248,17 +248,12 @@ a:hover { color: var(--accent-magenta); }
     width: auto;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     filter: drop-shadow(0 0 5px rgba(0, 240, 255, 0.3));
-    animation: float-logo 3s ease-in-out infinite;
 }
 .brand-logo:hover .brand-logo-img {
     transform: scale(1.1) rotate(2deg);
     filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.8)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
 }
-@keyframes float-logo {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-4px); }
-    100% { transform: translateY(0px); }
-}
+
 .cyber-logo-new {
     font-family: 'Orbitron', sans-serif;
     font-size: 32px;
